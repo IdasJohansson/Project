@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; 
+    background-color:#e1dfdd; 
+  }
+
+.windowheight{
+    height:40vh; 
+}
+
+h2{
+  font-size: 5vw;
+}
+
+/* Navigation menu */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    height: 60px; 
+    background-color: black;
+    
+    opacity:0.7; 
+    display: flex;
+    justify-content: right;
+    z-index: 100; /* makes nav meny the top layer */
+  }
+
+.navbar-link{
+  color: #e1dfdd; 
+  
+  padding: 5px; 
+  margin: 10px 5px; 
+
+  display: flex;
+  align-items: center;
+}  
+
+.navbar-link:hover{
+  background-color: darkgrey;
+  transition: background-color 0.5s; 
+}
+  
+a{ 
+  text-decoration:none;
+  color:white;
+}
+
+a:unvisited{
+  text-decoration:none;
+  color: white; 
+}
+
+  /* Style the header */
+.header{
+  background-color: black;
+    color: #e1dfdd; 
+    text-align: left;
+    font-size: 2rem;
+    width: 100%; 
+    height: 200px; 
+    padding:60px;
+  }
+
+#starth1{
+  font-size: 8vw;
+}
+  
+  /* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Creating two unequal columns that sits next to each other */
+.column {
+  /* height: 80vh; Should be removed. Only for demonstration */
+  }
+  
+  /*Right column */
+.column.right {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-image: linear-gradient(black, #e1dfdd);
+    border-left: 10px solid black;
+
+  }
+
+  /* Left column */
+.column.left {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    background-image: linear-gradient(black, #e1dfdd);
+    padding:10%; 
+    color: #e1dfdd;
+   
+  }
+
+
+
+#rightArrow{
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+ 
+}
+
+#leftArrow{
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+#arrow-container{
+display:flex; 
+justify-content: space-between;
+}
+
+/*About page*/
+#courseList{
+  line-height: 20px
+}
+
+.textBox{
+  display: flex;
+  margin-top: 10px; 
+}
+
+.textboxh1{
+  margin-top: 10px; 
+}
+
+.textboxh2{
+  margin-top: 10px; 
+  color: #e1dfdd; 
+}
+
+
+#image-container{
+  flex-basis: 70%;
+  order: 2;
+  text-align:center;
+
+}
+
+#profilePicture{
+ border: 5px solid #e1dfdd; 
+}
+
+iframe{
+  margin-top: 10px;
+  border: 5px solid #e1dfdd; 
+}
+
+/* Contact page*/
+.form-container{
+  margin-top: 10px;
+}
+
+.input-container{
+  margin-top: 10px;
+  width: 50%;
+}
+
+input{
+  width: 100%; 
+  background-color: #e1dfdd;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px; 
+}
+
+textarea{
+  width: 100%; 
+  background-color: #e1dfdd;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+}
+
+input:focus{
+  outline:none; 
+}
+
+textarea:focus{
+  outline:none; 
+}
+
+#submitbtn{
+  font-family: Arial, Helvetica, sans-serif;; 
+  margin-top:10px; 
+  width:50%;
+  color: #e1dfdd; 
+  background-color: black;
+  padding: 10px; 
+  opacity:0.7; 
+}
+
+#submitbtn:hover{
+  background-color: #e1dfdd;
+  color: black; 
+  transition: background-color 0.7s, color 0.7s; 
+  opacity:0.7; 
+}
+
+  /* Style the footer */
+footer{
+    padding: 20px; 
+    background-color: #e1dfdd;
+    color: darkgrey; 
+    display: flex;
+    justify-content:space-evenly;
+  }
+
+  .icons{
+    display: flex;
+    width:100px;
+    justify-content:space-evenly;
+  }
+
+#githubImage{
+  width:30px;
+  height:30px; 
+}
+
+#linkedinImage{
+  width:30px;
+  height:30px; 
+}
+
+img:hover:not(#profilePicture){
+  box-shadow: 0 0 4px 2px black;
+}
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 300px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
