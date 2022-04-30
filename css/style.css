@@ -77,10 +77,11 @@ a:unvisited{
     display: flex;
   }
   
-  /* Creating two unequal columns that sits next to each other */
+  /* Creating two unequal columns that sits next to each other 
 .column {
-  /* height: 80vh; Should be removed. Only for demonstration */
+  height: 80vh; Should be removed. Only for demonstration 
   }
+  */
   
   /*Right column */
 .column.right {
