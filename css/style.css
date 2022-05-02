@@ -14,7 +14,7 @@ body {
 }
 
 h2{
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 /* Navigation menu */
@@ -68,7 +68,7 @@ a:unvisited{
   }
 
 #starth1{
-  font-size: 8vw;
+  font-size: 6vw;
 }
   
   /* Container for flexboxes */
@@ -166,8 +166,12 @@ iframe{
   margin-top: 10px;
   border: 5px solid #e1dfdd; 
   height:400px; 
-  width:100%;
+  width: 100; 
+  /*
   overflow: scroll; 
+  */
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Contact page*/
