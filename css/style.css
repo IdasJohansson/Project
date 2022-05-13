@@ -166,11 +166,10 @@ iframe{
   margin-top: 10px;
   border: 5px solid #e1dfdd; 
   height:400px; 
-  width: 100; 
-  /*
-  overflow: scroll; 
-  */
-  overflow-x: hidden;
+  width: 100%; /* Gör så att vidden här anpassr sig efter storleken ovan så funkar scroll åt båda hållen*/
+  
+  word-wrap: break-word;
+  overflow-x: scroll;
   overflow-y: scroll;
 }
 
